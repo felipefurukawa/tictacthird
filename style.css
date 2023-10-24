@@ -21,6 +21,41 @@ body {
     background: linear-gradient(#2d414b,#718f9e);
     font-family: 'Finger Paint', cursive;
 }
+
+.board {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 50px;
+}
+
+.board .dropBox {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-right: 4px solid #F2C14E;
+    border-bottom: 4px solid #F2C14E;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board .dropBox:nth-child(3),
+.board .dropBox:nth-child(6),
+.board .dropBox:nth-child(9)
+{
+    border-right: none;
+}
+
+.board .dropBox:nth-child(7),
+.board .dropBox:nth-child(8),
+.board .dropBox:nth-child(9)
+{
+    border-bottom: none;
+}
+
+
 h1 {
     font-size: 54px;
     text-transform: uppercase;
