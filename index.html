@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <h1 class="title" id="title"><b>Tic Tac Third</b></h1>
     <div class="container">
     
         <div class="drag">
@@ -22,19 +23,19 @@
             </div>
         </div>
         
-        <h1 class="title" id="title"><b>Tic Tac Third</b></h1>
+        
         <div class="board">
-            <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="dropBox" id="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="dropBox" id="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="dropBox" id="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="dropBox" id="3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="dropBox" id="4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="dropBox" id="5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="dropBox" id="6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="dropBox" id="7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="dropBox" id="8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
-
+        
         <div class="drag">
             <div class="dragBox">
                 <div class="circle" draggable="true" ondragstart="drag(event)" id="circle1"></div>
@@ -46,7 +47,10 @@
                 <div class="circle" draggable="true" ondragstart="drag(event)" id="circle3"></div>
             </div>
         </div>
+        
+    </div>
 
+    <div class="flex-parant jc-center">
         <button class="reset" onclick="reset(event)">Reset Game</button>
     </div>
     <script src="script.js"></script>

@@ -139,7 +139,10 @@ body {
     border: none;
     outline: none;
     background: #F2C14E;
-    font-size: 2em;
+    font-size: 1.2em;
     cursor: pointer;
     border-radius: 18px;
+    color: #4b4b4b;
 }
+
+
