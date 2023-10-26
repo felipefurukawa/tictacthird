@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dosis:wght@600&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Playpen Sans'
 }
 
 :root {
@@ -13,12 +13,31 @@
 }
 
 body {
+    background: linear-gradient(#2d414b,#718f9e);
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(#2d414b,#718f9e);
-    font-family: 'Finger Paint', cursive;
+}
+
+.title{
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #F2C14E;
+    font-family: 'Playpen Sans'
 }
 
 .board {
@@ -122,4 +141,5 @@ body {
     background: #F2C14E;
     font-size: 2em;
     cursor: pointer;
+    border-radius: 18px;
 }
